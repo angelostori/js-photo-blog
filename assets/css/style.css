@@ -40,3 +40,7 @@ main {
     height: 600px;
     width: 600px;
 }
+
+.card-body h2 {
+    font-family: 'Edu TAS Beginner', sans-serif;
+}

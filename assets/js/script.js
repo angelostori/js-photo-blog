@@ -33,3 +33,9 @@ Note
 Non siete obbligati a usare Bootstrap: siete liberi di decidere come gestire lo stile 🙂
 
 */
+
+
+//Utilizzando Postman, testiamo una chiamata a questo endpoint: 
+//https://lanciweb.github.io/demo/api/pictures/
+//Studiamo bene la risposta e i dati che ci fornisce iniziando a pensare a come poterli sfruttare.
+
