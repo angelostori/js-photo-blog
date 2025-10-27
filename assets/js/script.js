@@ -54,11 +54,20 @@ fetch(urlApi)
     }
     )
 
-function newCard() {
+function newCard(obj) {
     const card = document.createElement("div");
     card.classList.add("card", "col-lg-4", "col-md-6", "col-sm-12");
-    return card
+
+    card.innerHTML = `
+        <img class="pin" src="./assets/img/pin.svg" alt="pin">
+        <img src="${obj.url}" alt="${obj.title}">
+        <div class="card-body">
+          <p class="card-date">${obj.date}</p>
+          <h2 class="description">${obj.title}</h2>
+        </div>
+        `
+    row.appendChild(card);
 }
 
-console.log(newCard());
-
+//const myObj = [{id: 1, title: 'Skate Park', date: '01-07-2024', url: 'https://marcolanci.it/boolean/assets/pictures/1.png'}]
+//newCard(myObj[0])
