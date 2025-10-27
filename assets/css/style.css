@@ -41,6 +41,7 @@ main {
     width: 600px;
 }
 
-.card-body h2 {
-    font-family: 'Edu TAS Beginner', sans-serif;
+.card-body .card-date {
+    color: dimgrey;
+    font-family: 'Sometype Mono', 'monospace';
 }
