@@ -41,7 +41,7 @@ Non siete obbligati a usare Bootstrap: siete liberi di decidere come gestire lo 
 
 const urlApi = 'https://lanciweb.github.io/demo/api/pictures/'
 
-const row = document.querySelector('.row')
+const column = document.querySelector('#column')
 
 fetch(urlApi)
     .then(response => response.json())
@@ -58,18 +58,29 @@ fetch(urlApi)
     )
 
 function newCard(obj) {
+    //creo una colonna Bootstrap
+    const col = document.createElement("div");
+    col.classList.add("col-lg-4", "col-md-6", "col-sm-12");
+
+    //creo la card
     const card = document.createElement("div");
-    card.classList.add("card", "col-lg-4", "col-md-6", "col-sm-12");
+    card.classList.add("card");
 
     card.innerHTML = `
-        <img class="pin" src="./assets/img/pin.svg" alt="pin">
-        <img src="${obj.url}" alt="${obj.title}">
-        <div class="card-body">
-          <p class="card-date">${obj.date}</p>
-          <h2 class="description">${obj.title}</h2>
-        </div>
-        `
-    row.appendChild(card);
+    <img class="pin" src="./assets/img/pin.svg" alt="pin">
+    <img src="${obj.url}" alt="${obj.title}">
+    <div class="card-body">
+      <p class="card-date">${obj.date}</p>
+      <h2 class="description">${obj.title}</h2>
+    </div>
+  `;
+
+    //inserisco la card nella colonna
+    col.appendChild(card);
+
+    //e infine la colonna nella row
+    const row = document.getElementById('row')
+    row.appendChild(col);
 }
 
 //const myObj = [{id: 1, title: 'Skate Park', date: '01-07-2024', url: 'https://marcolanci.it/boolean/assets/pictures/1.png'}]
