@@ -47,6 +47,9 @@ fetch(urlApi)
     .then(response => response.json())
     .then(data => {
         console.log(data);//un array di 6 oggetti contenebti id, title, date, url
+        data.forEach(card => {
+            newCard(card)
+        });
     }
     )
     .catch(error => {
