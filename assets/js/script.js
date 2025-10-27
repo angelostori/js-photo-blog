@@ -42,3 +42,14 @@ Non siete obbligati a usare Bootstrap: siete liberi di decidere come gestire lo 
 const urlApi = 'https://lanciweb.github.io/demo/api/pictures/'
 
 const row = document.querySelector('.row')
+
+fetch(urlApi)
+    .then(response => response.json())
+    .then(data => {
+        console.log(data);//un array di 6 oggetti contenebti id, title, date, url
+    }
+    )
+    .catch(error => {
+        console.error(error)
+    }
+    )
