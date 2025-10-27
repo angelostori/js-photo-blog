@@ -16,3 +16,7 @@ header {
         font-size: 90px;
     }
 }
+
+main {
+    background-image: url(../img/cork.png);
+}
