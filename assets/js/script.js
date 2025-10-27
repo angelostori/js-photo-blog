@@ -39,3 +39,6 @@ Non siete obbligati a usare Bootstrap: siete liberi di decidere come gestire lo 
 //https://lanciweb.github.io/demo/api/pictures/
 //Studiamo bene la risposta e i dati che ci fornisce iniziando a pensare a come poterli sfruttare.
 
+const urlApi = 'https://lanciweb.github.io/demo/api/pictures/'
+
+const row = document.querySelector('.row')

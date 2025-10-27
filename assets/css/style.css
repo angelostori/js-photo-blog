@@ -36,11 +36,6 @@ main {
     left: 50%
 }
 
-.card img {
-    height: 600px;
-    width: 600px;
-}
-
 .card-body .card-date {
     color: dimgrey;
     font-family: 'Sometype Mono', 'monospace';
