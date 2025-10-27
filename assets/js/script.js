@@ -53,3 +53,12 @@ fetch(urlApi)
         console.error(error)
     }
     )
+
+function newCard() {
+    const card = document.createElement("div");
+    card.classList.add("card", "col-lg-4", "col-md-6", "col-sm-12");
+    return card
+}
+
+console.log(newCard());
+
