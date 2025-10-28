@@ -30,7 +30,12 @@ main {
     padding: 1rem;
     border-radius: 0;
     position: relative;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3)
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    transition: transform .2s;
+}
+
+.card:hover {
+  transform: scale(1.1);
 }
 
 .card .pin {
