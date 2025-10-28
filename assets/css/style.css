@@ -17,13 +17,13 @@ header {
     }
 }
 
-.wrapper {
-    padding-top: 1rem;
-}
-
 main {
     background-image: url(../img/cork.png);
-    padding-bottom: 1rem;
+    padding-bottom: 5rem;
+}
+
+.row {
+    margin-top: 0;
 }
 
 .card {
