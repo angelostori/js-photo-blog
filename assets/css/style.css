@@ -31,7 +31,7 @@ main {
     border-radius: 0;
     position: relative;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-    transition: transform .2s;
+    transition: all .4s;
 }
 
 .card:hover {
@@ -68,13 +68,13 @@ main {
     z-index: 2;
 
     .container {
-        width: 50%;
+        width: 45%;
         margin-top: 8px;
 
         img {
             display: block;
             height: auto;
-            width: 90%;
+            width: 100%;
             margin-top: 8px;
         }
 
