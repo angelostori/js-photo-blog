@@ -90,7 +90,7 @@ function newCard(obj) {
 Milestone 1
 
 Facciamo in modo di creare un overlay che copra l’intera pagina e all’interno, centrata, disponiamo un’immagine qualunque 
-ed un button di chiusura.
+ed un button di chiusura.  
 
 Milestone 2
 
@@ -112,3 +112,8 @@ Bonus
 Spostandosi col mouse sopra le foto, queste si zoommano, ruotano di 10 gradi e la loro ombra aumenta, il tutto in manierà 
 fluida. Inoltre il mouse diventa un puntatore, per far capire all’utente che può cliccare
 */
+
+//facciamo sì che cliccando una qualunque foto. L’overlay ricompaia.
+
+const image = document.querySelectorAll(".card img")
+console.log(image);
