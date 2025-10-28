@@ -68,7 +68,7 @@ function newCard(obj) {
 
     card.innerHTML = `
     <img class="pin" src="./assets/img/pin.svg" alt="pin">
-    <img src="${obj.url}" alt="${obj.title}">
+    <img class="photo-card" src="${obj.url}" alt="${obj.title}">
     <div class="card-body">
       <p class="card-date">${obj.date}</p>
       <h2 class="description">${obj.title}</h2>
@@ -113,7 +113,20 @@ Spostandosi col mouse sopra le foto, queste si zoommano, ruotano di 10 gradi e l
 fluida. Inoltre il mouse diventa un puntatore, per far capire all’utente che può cliccare
 */
 
-//facciamo sì che cliccando una qualunque foto. L’overlay ricompaia.
+const overlay = document.getElementById('overlay')
+const overlayImage = document.getElementById('overlay-image')
+const closeOverlay = document.getElementById('close-overlay')
 
-const image = document.querySelectorAll(".card img")
-console.log(image);
+document.addEventListener('click', (event) => {
+    //console.log(event.target);
+    if (event.target.classList.contains('photo-card')) {
+        overlayImage.src = event.target.src;
+        overlay.style.display = 'block';
+    }
+})
+
+closeOverlay.addEventListener('click', (event) => {
+    if (event.target === closeOverlay) {
+        overlay.style.display = 'none'
+    }
+})
