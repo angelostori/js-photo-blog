@@ -130,3 +130,9 @@ closeOverlay.addEventListener('click', (event) => {
         overlay.style.display = 'none'
     }
 })
+
+overlay.addEventListener('click', (event) => {
+    if (event.target === overlay) {
+        overlay.style.display = 'none'
+    }
+})
